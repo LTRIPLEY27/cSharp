@@ -4,8 +4,6 @@ namespace Methods
 {
     class Program
     {
-
-
         int numero1 = 5;
         int numero2 = 9;
         static void Main(string[] args)
@@ -29,7 +27,28 @@ namespace Methods
             string b = Console.ReadLine();
 
             Console.WriteLine($"la suma de letras es {gimeName(a,b)}");
+
+            int b1 = 7;
+            double b2 = 5.2;
+            double b3 = 8.3;
+
+            Console.WriteLine(Resta(b1, b2, b3));
         }
+                                                                    // PARA CONVERTIR UN PARAMETRO A OPCIONAL, SE LE DEBE DE INDICAR UN VALOR EN LA ZONA DE PARAMETROS
+        private static double Resta(int nume1, double nume2, double nume3 = 0)
+        {
+            return NewMethod(nume1, nume2, nume3); // SE PUEDEN RETORNAR METODOS CONCATENADOS
+        }
+
+
+        private static double NewMethod(int nume1, double nume2, double nume3 = 0) // EL METODO ES LLAMADO DESDE EL RETURN ANTERIOR, INCLUIDO LOS PARAMETROS
+        {
+            return (nume1 - nume2) + nume3;
+        }
+
+        // FORMA ABREVIADA 
+
+        // private static double Resta(int v1, double v2) => v1 - v2;
 
         static void mensajeEnPantalla()
         {
