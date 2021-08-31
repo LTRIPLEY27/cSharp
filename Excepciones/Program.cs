@@ -22,18 +22,34 @@ namespace Excepciones
             {
                 intent++;
 
-                try
+                try  // 1er BLOQUE
                 {
                     miNum = int.Parse(Console.ReadLine());
                     if (miNum > aleatorio) Console.WriteLine("el numero es mas bajo");
 
                     if (miNum < aleatorio) Console.WriteLine("el num es mas alto");
-                } 
-                catch(FormatException ex)
+                }  
+               // catch(FormatException e)
+                //{
+                  //  Console.WriteLine("error");
+                //}
+                catch (Exception ex) when (ex.GetType() != typeof(FormatException))//MAYOR EXCEPTION, ES RECOMENDABLE SER MAS ESPECIFICO CON LAS EXCEPCIONES PARA CONTEMPLAR LAS REPARACIONES
                 {
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine("ha habido un error");
                     Console.WriteLine("EL FORMANO DEBE DE SER NECESARIAMENTE UN NUMERO");
-                   // miNum = 0;
+                    // miNum = 0;
                 }
+              
+
+                
+                /*catch(OverflowException e)
+                {
+                    //Console.WriteLine("Again... error");
+                } catch(StackOverflowException e)
+                {
+                    Console.WriteLine("its over");
+                }*/
             
                
             } while (aleatorio != miNum);

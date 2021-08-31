@@ -1,0 +1,43 @@
+		
+		    ---	CSharp Statesment  ---
+
+
+
+	Uso del Switch
+
+cautions:
+
+- la expresion constante ha de ser unica.
+- solo se puede usar para evaluar: int, char, String (float y double deben de hacerse con if).
+- deben de llevar su break de flujo.
+- se puede utilizar return y throw.
+
+
+			*** HERENCIA DE EXCEPCIONES ***
+
+Arbol de Jerarquia de Excepciones: 
+
+1.- Exception (Mayor Jerarquia, contempla indeterminadamente las excepciones)
+2.- SystemException
+3.- FormatException
+4.- OverflowException
+
+
+			*** CONFLICTO DE EXCEPCIONES ***
+
+En caso de querer abarcar excepciones mas especificas, la jerarquia se debe de aplicar anversamente (la mas especifica a la mas general)
+
+			*** EXCEPCIONES CON FILTRO ***
+
+		--- EN ESTE FILTRO SE PUEDE APLICAR MULTIPLES FILTROS SEGUN LA SINTAXIS ---
+ catch (Exception ex) when (ex.GetType() != typeof(FormatException))//MAYOR EXCEPTION, ES RECOMENDABLE SER MAS ESPECIFICO CON LAS EXCEPCIONES PARA CONTEMPLAR LAS REPARACIONES
+                {
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine("ha habido un error");
+                    Console.WriteLine("EL FORMANO DEBE DE SER NECESARIAMENTE UN NUMERO");
+                    
+                }
+
+			*** EXPRESIONES CHECKED ***
+
+
