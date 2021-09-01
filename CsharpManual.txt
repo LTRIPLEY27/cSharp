@@ -47,6 +47,14 @@ Las expresiones "checked" y "unchecked" solo funcionan para verificar expresione
 
 Al hacer la llamada a esta excepcion, obligamos a que sea implementado el "try catch" en el llamado al metodo.
 
+			
+			*** Finally ***
 
+Con este bloque, aseguramos que el codigo se ejecute siempre, tanto si cae en el bloque "try", o en el bloque "catch".
+
+- normalmente se usa en BBDD o lectura de ficheros.
+- se ejecuta, normalmente, para liberar recursos.
+
+Con el "finally" nos aseguramos que la conexion se cierra y ya no se consumen recursos *** IMPORTANTE *** 
 
 
