@@ -40,4 +40,13 @@ En caso de querer abarcar excepciones mas especificas, la jerarquia se debe de a
 
 			*** EXPRESIONES CHECKED ***
 
+Las expresiones "checked" y "unchecked" solo funcionan para verificar expresiones del tipo "int" o "long"(UNICAMENTE).
+
+
+			*** THROW EXCEPTIONS ***
+
+Al hacer la llamada a esta excepcion, obligamos a que sea implementado el "try catch" en el llamado al metodo.
+
+
+
 
