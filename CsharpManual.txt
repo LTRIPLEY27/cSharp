@@ -57,4 +57,56 @@ Con este bloque, aseguramos que el codigo se ejecute siempre, tanto si cae en el
 
 Con el "finally" nos aseguramos que la conexion se cierra y ya no se consumen recursos *** IMPORTANTE *** 
 
+			
+
+
+			*** PROGRAMACION ORIENTADA A OBJETOS ***
+
+
+Modificadores de Acceso:
+
+- Public :
+	
+	Accesible desde cualquier parte.
+
+- Private:
+
+	Accesible desde la propia clase.
+
+- Protected:
+
+	Accesible desde la clase derivada.
+
+- Internal:
+
+	Accesible desde el mismo ensamblado.
+
+- Protected Internal:
+
+	Accesible desde el mismo ensamblado o clase derivada de otro ensamblado.
+
+- Private Protected:
+
+	Accesible desde la misma clase o clase derivada del mismo ensamblado.
+
+- Por defecto: 
+
+	Accesible desde el mismo paquete.
+
+
+- Clase:
+
+	Modelo donde se redactan las caracteristicas comunes de un grupo de objetos.
+
+- Objetos:
+
+	Ejemplar perteneciente a una clase.
+
+- Tiene Atributos (Propiedades / Caracteristicas).
+	
+	ejm: color, tamaño, edad (...).
+
+- Tiene un comportamiento (Metodos / Funciones).
+	
+	ejm: correr, arrancar, medir (...).
 
