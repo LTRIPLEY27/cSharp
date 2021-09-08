@@ -1,7 +1,14 @@
 		
 		    ---	CSharp Statesment  ---
 
+			*** ACTIVACION DEL AJUSTE DE LA LINEA ***
 
+
+- Ubicar en "Herramientas" las "opciones".
+- Ubicar "Editor de texto", "todos los lenguajes".
+- Activar la casilla "Word Wrap" u "Ajuste de linea".
+
+CUALQUIER CASO : https://jd-bots.com/2021/07/10/how-to-enable-word-wrap-in-visual-studio/
 
 	Uso del Switch
 
@@ -110,3 +117,5 @@ Modificadores de Acceso:
 	
 	ejm: correr, arrancar, medir (...).
 
+
+- Las clases han de crearse dentro de las llaves del namespace.
