@@ -69,16 +69,19 @@ Con el "finally" nos aseguramos que la conexion se cierra y ya no se consumen re
 
 			*** PROGRAMACION ORIENTADA A OBJETOS ***
 
+				*** ENCAPSULACION ***
+
+ Prohibicion de acceso a datos desde una clase a otras.
 
 Modificadores de Acceso:
 
 - Public :
 	
-	Accesible desde cualquier parte.
+	Accesible desde cualquier parte, mas alla de su "ambito".
 
 - Private:
 
-	Accesible desde la propia clase.
+	Accesible desde la propia clase, solo accesible desde su "ambito" .
 
 - Protected:
 
@@ -119,3 +122,18 @@ Modificadores de Acceso:
 
 
 - Las clases han de crearse dentro de las llaves del namespace.
+
+
+			*** CONVENCIONES EN C#***
+
+
+- Identificadores "public" deben comenzar con letra mayuscula
+
+	ejm: Notacion "PascalCase", --- public double CalculoArea() {} --- DE ESTA FORMA
+
+- Identificacores no "public" han de iniciar  con letra minuscula.
+
+	ejm: Notacion "camelCase", --- private int longitudRadio() {} --- DE ESTA FORMA
+
+			
+
