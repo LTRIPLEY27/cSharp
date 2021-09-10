@@ -204,14 +204,14 @@ namespace InstruccionIfElse
             Console.WriteLine("ingresa un  numero del 1 al 100");
             num = int.Parse(Console.ReadLine());
 
-            while (num != 0 || num < 0 && cont < 3) { 
+            while (cont < 2 && num > 0) { 
                 if(num == random)
                 {
                     Console.WriteLine("Eres AFORTUNADO");
                 } else
                 {
 
-                    Console.WriteLine($"continua intentando, solo dispones de 3 oportunidades");
+                    Console.WriteLine($"continua intentando, solo dispones de 3 oportunidades, tienes {cont} de ellos");
                     cont++;
 
                 }
