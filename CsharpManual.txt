@@ -137,3 +137,17 @@ Modificadores de Acceso:
 
 			
 
+			*** CONSTRUCTORES ***
+
+
+Su finalidad es dar un estado inicial a los objetos (inicializar).
+
+
+
+			*** SOBRECARGA DE CONSTRUCTORES ***
+
+
+Creacion de objetos con diferentes estados iniciales. Se produce cuando la clase tiene mas de 1 constructor, cada constructor debe de recibir diferentes numeros de parametros.
+
+
+
