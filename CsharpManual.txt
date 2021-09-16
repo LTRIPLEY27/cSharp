@@ -150,4 +150,43 @@ Su finalidad es dar un estado inicial a los objetos (inicializar).
 Creacion de objetos con diferentes estados iniciales. Se produce cuando la clase tiene mas de 1 constructor, cada constructor debe de recibir diferentes numeros de parametros.
 
 
+			*** METODOS GETTERS AND SETTERS ***
+
+
+- setters:
+
+	No llevan "return", por lo cual, se han de definir como "void", sin informar si es "int", "string" o algun valor ya que nunca retorna.
+
+	Ejem:
+
+	public void setExtras(bool paramClima, string paramTapiceria) // LOS GETTERS SIEMPRE SERAN "VOID" PUES JAMAS RETORNAN VALORES, A DIFERENCIA DE LOS GETTERS.
+        {
+            this.clima = paramClima;
+            this.tapiceria = paramTapiceria;
+        }
+- getters:
+
+	Siempre llevan la palabra "return" ya que siempre han de devolver un valor, se deben de definir necesariamente con el tipo de valor que retorns: "string","double" etc, nunca sera un metodo "void". No recibe parametro(habitualmente), cuando solo acompaña a un setter, puede hacerlo cuando refiere a un metodo extra de la clase o una funcion
+
+	Ejem:
+
+	public string getExtras()
+        {
+            return $"Extras del coche ; \n Tapiceria:  {this.tapiceria}, Climatizador : {this.clima} ";
+        }
+
+
+
+
+
+*** Para que un metodo Get establezca los valores dictados en un Set, en la clase principal se ha llamar/establecer el "setter" antes del "getter", caso contrario reconocera los valores por defecto del programa y no establecera los que les indiquemos (!!! MAIN SIEMPRE EJECUTA DE ARRIBA HACIA ABAJO !!!).
+
+	--- Ejemplo del llamado del metodo Set antes del Get para que actualice los cambios, siempre desde la clase principal --- 
+
+	Car coche = new Car();    
+
+	coche.setExtras(true, "cuero"); // LLAMADA AL METODO SETTER (!!! SIEMPRE ANTES DEL GETTER !!!)
+
+        Console.WriteLine(coche.getExtras());
+
 
