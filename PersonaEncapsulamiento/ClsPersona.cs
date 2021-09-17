@@ -33,35 +33,45 @@ namespace PersonaEncapsulamiento
         public float Weigth { get => _weigth; set => _weigth = value; }
         public float Heigth { get => _heigth; set => _heigth = value; }
 
-        public string calcularMC()
+        public string CalcularMC()
         {
-            if(Weigth / Heigth < 20)
+            string value;
+            if((Weigth / (Heigth * Heigth)) < 20)
             {
-                return "Estas en tu peso ideal";
+                value = "Estas en tu peso ideal";
+                //return = "Estas en tu peso ideal";
             }
-            if (Weigth / Heigth > 20 && Weigth / Heigth <= 25)
+            if ((Weigth / (Heigth * Heigth)) > 20 && (Weigth / (Heigth * Heigth)) <= 25)
             {
-                return "Es un peso correcto";
+                //return "Es un peso correcto";
+                value = "Es un peso correcto";
             } else
             {
-                return "Tienes sobrepeso";
+               value = "Tienes sobrepeso";
             }
+
+            return value;
         }
 
-        public string esMayorDeEdad()
+        public string EsMayorDeEdad()
         {
+            string response = "";
             if(Age >= 18)
             {
-                return "Es mayor de edad";
+                response = "Es mayor de edad";
+                // return "Es mayor de edad";
             } else 
             {
-                return "Es menor de edad";
+                //return "Es menor de edad";
+                response = "Es menor de edad";
             }
+
+            return response;
         }
 
         public string toString()
         {
-            return $"Ficha Tecnica \n  Nombre : {Name} \n Edad: {Age}  {esMayorDeEdad()} \n DNI: {Dni} \n Sexo: {Sex} \n Peso: {Weigth} \n Altura: {Heigth} \n \n El Indice de Masa Corporal segun su valoracion es : {calcularMC()}";
+            return $"Ficha Tecnica \n  Nombre : {Name} \n Edad: {Age}  {EsMayorDeEdad()} \n DNI: {Dni} \n Sexo: {Sex} \n Peso: {Weigth} \n Altura: {Heigth} \n \n El Indice de Masa Corporal segun su valoracion es : {CalcularMC()}";
         }
     }
 }
