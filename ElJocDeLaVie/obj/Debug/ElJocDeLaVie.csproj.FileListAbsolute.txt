@@ -1,0 +1,10 @@
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\ElJocDeLaVie\bin\Debug\ElJocDeLaVie.exe.config
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\ElJocDeLaVie\bin\Debug\ElJocDeLaVie.exe
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\ElJocDeLaVie\bin\Debug\ElJocDeLaVie.pdb
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\ElJocDeLaVie\obj\Debug\ElJocDeLaVie.csproj.AssemblyReference.cache
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\ElJocDeLaVie\obj\Debug\ElJocDeLaVie.Form1.resources
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\ElJocDeLaVie\obj\Debug\ElJocDeLaVie.Properties.Resources.resources
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\ElJocDeLaVie\obj\Debug\ElJocDeLaVie.csproj.GenerateResource.cache
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\ElJocDeLaVie\obj\Debug\ElJocDeLaVie.csproj.CoreCompileInputs.cache
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\ElJocDeLaVie\obj\Debug\ElJocDeLaVie.exe
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\ElJocDeLaVie\obj\Debug\ElJocDeLaVie.pdb
