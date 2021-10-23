@@ -1,0 +1,10 @@
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\UserSQL\bin\Debug\UserSQL.exe.config
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\UserSQL\bin\Debug\UserSQL.exe
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\UserSQL\bin\Debug\UserSQL.pdb
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\UserSQL\obj\Debug\UserSQL.csproj.AssemblyReference.cache
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\UserSQL\obj\Debug\UserSQL.Properties.Resources.resources
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\UserSQL\obj\Debug\UserSQL.csproj.GenerateResource.cache
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\UserSQL\obj\Debug\UserSQL.csproj.CoreCompileInputs.cache
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\UserSQL\obj\Debug\UserSQL.exe
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\UserSQL\obj\Debug\UserSQL.pdb
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\UserSQL\obj\Debug\UserSQL.FormRegister.resources
