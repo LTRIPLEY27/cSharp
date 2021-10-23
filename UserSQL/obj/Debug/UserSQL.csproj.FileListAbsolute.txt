@@ -8,3 +8,7 @@ C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\UserSQL\obj\Debug\UserSQL.csproj.C
 C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\UserSQL\obj\Debug\UserSQL.exe
 C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\UserSQL\obj\Debug\UserSQL.pdb
 C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\UserSQL\obj\Debug\UserSQL.FormRegister.resources
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\UserSQL\obj\Debug\UserSQL.FormRegistrosResults.resources
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\UserSQL\obj\Debug\UserSQL.FormDelete.resources
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\UserSQL\obj\Debug\UserSQL.FormEdited.resources
+C:\Users\hellz\source\repos\LTRIPLEY27\cSharp\UserSQL\obj\Debug\UserSQL.FormSearch.resources

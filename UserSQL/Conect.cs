@@ -99,13 +99,13 @@ namespace UserSQL
         }
 
 
-        public bool Actualiza(ClsUser user)
+        public bool Actualiza(string user, string pass, string mail)
         {
             bool response = true;
 
             try
             {
-                consult = new SqlCommand(string.Format("UPDATE datos_usuario set password = '{0}' AND mail = '{1}' WHERE users = '{2}'", user.Password, user.Mail, user.Users), conect);
+                consult = new SqlCommand(string.Format("UPDATE datos_usuario set password = '{0}',  mail = '{1}' WHERE users = '{2}'", pass, mail, user), conect);
                 consult.ExecuteNonQuery();
                 MessageBox.Show("ACTUALIZADO CON EXITO");
                 response = false;
@@ -116,6 +116,81 @@ namespace UserSQL
             }
 
             return response;
+        }
+
+        public bool Elimina(string user)
+        {
+            bool response = true;
+
+            try
+            {
+                consult = new SqlCommand(string.Format("DELETE from datos_usuario WHERE users ='{0}'", user), conect);
+                consult.ExecuteNonQuery();
+                MessageBox.Show("USUARIO ELIMINADO");
+                response = false;
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("NO ELIMINADO" + error.ToString());
+                response = true;
+            }
+
+            return response;
+        }
+
+        public bool Search(string response, string option, DataGridView dgvSearch)
+        {
+            bool response1 = true;
+
+            try
+            {
+                if(response == "Usuario")
+                {
+                    // consult = new SqlCommand(string.Format("SELECT * from datos_usuario WHERE users ='{0}'", option), conect);
+                    da = new SqlDataAdapter(string.Format("SELECT * from datos_usuario WHERE users ='{0}'", option), conect);
+                    dt = new DataTable();
+                    //consult.ExecuteNonQuery();
+
+                    da.Fill(dt);
+                    dgvSearch.DataSource = dt;
+                     MessageBox.Show("REGISTRO ENCONTRADO");
+                     response1 = false;
+                } if (response == "Contraseña")
+                {
+                    //consult = new SqlCommand(string.Format("SELECT * from datos_usuario WHERE password ='{0}'", option), conect);
+                    //consult.ExecuteNonQuery();
+
+                    da = new SqlDataAdapter(string.Format("SELECT * from datos_usuario WHERE password ='{0}'", option), conect);
+                    dt = new DataTable();
+                    //consult.ExecuteNonQuery();
+
+                    da.Fill(dt);
+                    dgvSearch.DataSource = dt;
+                    MessageBox.Show("REGISTRO ENCONTRADO");
+                    response1 = false;
+                } else
+                {
+                    //consult = new SqlCommand(string.Format("SELECT * from datos_usuario WHERE mail ='{0}'", option), conect);
+                    //consult.ExecuteNonQuery();
+
+                    da = new SqlDataAdapter(string.Format("SELECT * from datos_usuario WHERE mail ='{0}'", option), conect);
+                    dt = new DataTable();
+                    //consult.ExecuteNonQuery();
+
+                    da.Fill(dt);
+                    dgvSearch.DataSource = dt;
+
+                    MessageBox.Show("REGISTRO ENCONTRADO");
+                    response1 = false;
+                }
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("NO ELIMINADO" + error.ToString());
+            
+            }
+
+            return response1;
         }
     }
 }

@@ -40,6 +40,10 @@ namespace UserSQL
             this.btnClose = new System.Windows.Forms.Button();
             this.dgvData = new System.Windows.Forms.DataGridView();
             this.lblTable = new System.Windows.Forms.Label();
+            this.btnView = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnEdited = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,7 +114,7 @@ namespace UserSQL
             // 
             this.btnRegister.Enabled = false;
             this.btnRegister.Font = new System.Drawing.Font("Courier New", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegister.Location = new System.Drawing.Point(259, 358);
+            this.btnRegister.Location = new System.Drawing.Point(170, 358);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(141, 36);
             this.btnRegister.TabIndex = 12;
@@ -121,7 +125,7 @@ namespace UserSQL
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Courier New", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(489, 358);
+            this.btnClose.Location = new System.Drawing.Point(554, 422);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(146, 36);
             this.btnClose.TabIndex = 13;
@@ -132,9 +136,9 @@ namespace UserSQL
             // dgvData
             // 
             this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvData.Location = new System.Drawing.Point(383, 65);
+            this.dgvData.Location = new System.Drawing.Point(395, 89);
             this.dgvData.Name = "dgvData";
-            this.dgvData.Size = new System.Drawing.Size(427, 199);
+            this.dgvData.Size = new System.Drawing.Size(393, 199);
             this.dgvData.TabIndex = 14;
             this.dgvData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvData_CellContentClick);
             // 
@@ -148,11 +152,63 @@ namespace UserSQL
             this.lblTable.TabIndex = 18;
             this.lblTable.Text = "Registro tabla";
             // 
+            // btnView
+            // 
+            this.btnView.Enabled = false;
+            this.btnView.Font = new System.Drawing.Font("Courier New", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView.Location = new System.Drawing.Point(363, 358);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(141, 36);
+            this.btnView.TabIndex = 19;
+            this.btnView.Text = "Ver Registros";
+            this.btnView.UseVisualStyleBackColor = true;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Enabled = false;
+            this.btnDelete.Font = new System.Drawing.Font("Courier New", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(170, 422);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(141, 36);
+            this.btnDelete.TabIndex = 20;
+            this.btnDelete.Text = "Eliminar";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnEdited
+            // 
+            this.btnEdited.Enabled = false;
+            this.btnEdited.Font = new System.Drawing.Font("Courier New", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdited.Location = new System.Drawing.Point(363, 422);
+            this.btnEdited.Name = "btnEdited";
+            this.btnEdited.Size = new System.Drawing.Size(141, 36);
+            this.btnEdited.TabIndex = 21;
+            this.btnEdited.Text = "Editar";
+            this.btnEdited.UseVisualStyleBackColor = true;
+            this.btnEdited.Click += new System.EventHandler(this.btnEdited_Click);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Enabled = false;
+            this.btnSearch.Font = new System.Drawing.Font("Courier New", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(554, 358);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(141, 36);
+            this.btnSearch.TabIndex = 22;
+            this.btnSearch.Text = "Busqueda";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // FormRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 552);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.btnEdited);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnView);
             this.Controls.Add(this.lblTable);
             this.Controls.Add(this.dgvData);
             this.Controls.Add(this.btnClose);
@@ -186,5 +242,9 @@ namespace UserSQL
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.DataGridView dgvData;
         private System.Windows.Forms.Label lblTable;
+        private System.Windows.Forms.Button btnView;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnEdited;
+        private System.Windows.Forms.Button btnSearch;
     }
 }

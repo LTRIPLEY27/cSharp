@@ -60,10 +60,39 @@ namespace UserSQL
             if(chbConditions.Checked)
             {
                 btnRegister.Enabled = true;
-           
+                btnView.Enabled = true;
+                btnDelete.Enabled = true;
+                btnEdited.Enabled = true;
+                btnSearch.Enabled = true;
             }
         }
 
-      
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            FormRegistrosResults registros = new FormRegistrosResults();
+
+            registros.Show();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            FormDelete delete = new FormDelete();
+
+            delete.Show();
+        }
+
+        private void btnEdited_Click(object sender, EventArgs e)
+        {
+            FormEdited edited = new FormEdited();
+
+            edited.Show();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            FormSearch search = new FormSearch();
+
+            search.Show();
+        }
     }
 }
