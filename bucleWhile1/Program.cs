@@ -43,7 +43,7 @@ namespace bucleWhile1
             Console.WriteLine($"Has acertado, el numero era {num}, el numero de intento que te ha costado han sido: {cont}");
             
 
-            /*Programa numero aleatorio entre 0 y 100*/
+            /*Programa numero aleatorio entre 0 y 100*/  //CAMBIOS DE IDE
 
             /*string response = Console.ReadLine();
 
